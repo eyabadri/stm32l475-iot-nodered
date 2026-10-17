@@ -1,0 +1,45 @@
+﻿# Credentials & Security (CRITICAL)
+firmware/Core/Inc/wifi_credentials.h
+
+# STM32CubeIDE Build Artifacts
+firmware/Debug/
+firmware/Release/
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.o
+*.d
+*.su
+
+# IDE & Toolchain
+.settings/
+*.launch
+.metadata/
+
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.venv/
+env/
+venv/
+
+# Databases & Runtime Logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# OS Specific
+Thumbs.db
+.DS_Store
+ehthumbs.db
+
+# Large Media & Archives
+*.mp4
+*.avi
+*.zip
+*.tar.gz
+*.rar
