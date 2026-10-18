@@ -38,6 +38,8 @@ An end-to-end IoT telemetry pipeline built on the **B-L475E-IOT01A Discovery boa
 ## Table of Contents
 
 - [System Architecture](#system-architecture)
+- [Architecture & SQLite Persistence (Doc)](docs/ARCHITECTURE_ET_SQLITE.md)
+- [Mobile Hotspot Setup & Offline Demo (Doc)](docs/SMARTPHONE_HOTSPOT_GUIDE.md)
 - [Hardware & Sensors](#hardware--sensors)
 - [Firmware Design](#firmware-design)
 - [Node-RED Dashboard](#node-red-dashboard)
@@ -261,7 +263,10 @@ stm32l475-iot-nodered/
 |-- README.md
 |-- LICENSE
 |-- .gitignore
-|-- docs/images/                   Screenshots and analysis graphs
+|-- docs/
+|   |-- ARCHITECTURE_ET_SQLITE.md      System architecture & SQLite details
+|   |-- SMARTPHONE_HOTSPOT_GUIDE.md    Autonomous mobile hotspot demo guide
+|   +-- images/                        Screenshots and analysis graphs
 |-- firmware/
 |   |-- Core/
 |   |   |-- Inc/                   Headers (main.h, wifi_credentials.example.h)
@@ -275,6 +280,7 @@ stm32l475-iot-nodered/
 |-- node-red/
 |   +-- flows.json                 Importable Node-RED flow
 +-- tools/
+    |-- requirements.txt           Python dependencies
     |-- mosquitto.conf             Broker configuration
     |-- simulate_stm32.ps1        MQTT telemetry emulator
     |-- plot_sensors.py           SQLite viewer + Matplotlib plots
